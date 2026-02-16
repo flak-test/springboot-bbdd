@@ -20,6 +20,9 @@ public class Book {
     @Min(1)
     private double price;
 
+    @NotNull
+    private String genre;
+
     // Getters and setters
     public Long getId() {
         return id;
@@ -51,5 +54,13 @@ public class Book {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+    // Getter for genre
+    public String getGenre() {
+        return genre;
+    }
+    // Setter for genre
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
